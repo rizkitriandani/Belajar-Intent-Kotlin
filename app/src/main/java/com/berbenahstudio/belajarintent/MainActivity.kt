@@ -1,5 +1,6 @@
 package com.berbenahstudio.belajarintent
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -19,7 +20,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View) {
         when(v.id){
             R.id.btnIntentExplicit ->{
-                Toast.makeText(this, "ANDA MENEKAN TOMBOL ${R.string.intent_explicit}",Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this, "ANDA MENEKAN TOMBOL ${R.string.intent_explicit}",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this@MainActivity, SecondActivity::class.java)
+                startActivity(intent)
+//                startActivity(Intent(this@MainActivity, SecondActivity::class.java))
             }
         }
     }
