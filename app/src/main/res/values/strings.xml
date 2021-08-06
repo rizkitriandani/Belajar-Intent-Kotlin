@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Belajar Intent</string>
+    <string name="belajar_intent_bareng_ikik">Belajar Intent Bareng Ikik</string>
+    <string name="intent_explicit">Intent Explicit</string>
 </resources>
